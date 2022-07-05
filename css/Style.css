@@ -158,30 +158,30 @@ aside {
   
 }
 
-#Transform,
-#Transition {
+.Transform,
+.Transition {
     width: 400px;
     height: 400px;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: #9ae9f3;
 }
 
-#Transform{
+.Transform{
     transform: translate(50px, 20px); 
     transform: scale(0.5,0.5); /*sirve para escalar o hacer zoom del contenido*/
   
 }
 
-#Transition{
+.Transition{
   transition: height 2s, width 4s; /*deslizamiento del elemento height de arriba abajo width de costados (tiene que estar nombrado en divtransition:hover) ó sino*/
   transition: all 2s; /*esto sirve para que cambie todo el elemento en esa cantidad de segundos*/
   
 }
 
-#Transition:hover /*hover significa cuando paso el mouse por encima*/
+.Transition:hover /*hover significa cuando paso el mouse por encima*/
 {
   height: 600px; /*cuando se pase el mouse por encima del elemento(en este caso el color de fondo del cuadro) se agrandara ya que originalmente esta en 400px */
   width: 500px;
-  background-color: #09b2c9 /*el color de fondo del texto cambia cuando pongo el mouse arriba*/
+  background-color: #9ae9f3 /*el color de fondo del texto cambia cuando pongo el mouse arriba*/
 }
 
   
