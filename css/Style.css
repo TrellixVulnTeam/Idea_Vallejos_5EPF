@@ -120,7 +120,6 @@ section {
   background-color:#80DEEA;
   color: #077c8b;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
   font-size: 20px;
   border-top: solid 5px  #077c8b;
   border-right: solid 5px #077c8b;
@@ -131,6 +130,7 @@ section {
   justify-content:space-evenly;
   text-align: center;
 }
+
  
 
 aside {
@@ -163,8 +163,8 @@ aside {
 .divTransition
  {
    
-    background-color: #99e4ee;
-    background-color:#80DEEA;
+    
+  background-color:#80DEEA;
   color: #077c8b;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
@@ -201,7 +201,7 @@ aside {
   100% {opacity: 1;}
 }
   
-  
+
 
     
 .cambioTexto{
