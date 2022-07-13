@@ -3,7 +3,7 @@
   margin: 0%;
 }
 body {
-  color: #077c8b;
+  color:#1A5276;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -67,6 +67,7 @@ nav {
   font-size: large;
   font-weight: 500;
   grid-area: nav;
+  border-radius: 120;
   
 }
 
@@ -104,9 +105,9 @@ img {
 }
 
 section {
-  padding: 20px 20px 20px 20px;
+  padding: 10px 10px 10px 10px;
   grid-area: section;
-  justify-items: stretch;
+  justify-items: space-evenly;
   align-items: stretch
 }
 
@@ -121,17 +122,16 @@ section {
   color: #077c8b;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
-  border-top: solid 5px  #077c8b;
-  border-right: solid 5px #077c8b;
-  border-bottom: solid 5px #077c8b;
-  border-left: solid 5px #077c8b;
+  border-top: solid 5px  #1A5276;
+  border-right: solid 5px #1A5276;
+  border-bottom: solid 5px #1A5276;
+  border-left: solid 5px #1A5276 ;
   border-radius: 15px;
   z-index: 2;
-  justify-content:space-evenly;
+  justify-content:center;
   text-align: center;
 }
 
- 
 
 aside {
   grid-area: aside;
@@ -143,7 +143,7 @@ aside {
   font-size: 20px; 
   font-weight:lighter;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #077c8b;
+  color: #1A5276;
   position: justify; }
 
   h3{
@@ -151,11 +151,14 @@ aside {
   }
 
   #subtitulo{
-    animation-duration: 2s;
+  animation-duration: 2s;
   animation-name: aparecer;
   animation-iteration-count: infinite; 
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #077c8b; 
+  justify-content:space-evenly;
+  position: justify;
+  text-align: center
   
 }
 
@@ -165,13 +168,13 @@ aside {
    
     
   background-color:#80DEEA;
-  color: #077c8b;
+  color: #1A5276;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
-  border-top: solid 5px  #077c8b;
-  border-right: solid 5px #077c8b;
-  border-bottom: solid 5px #077c8b;
-  border-left: solid 5px #077c8b;
+  border-top: solid 5px #1A5276 ;
+  border-right: solid 5px #1A5276;
+  border-bottom: solid 5px #1A5276;
+  border-left: solid 5px #1A5276;
   border-radius: 15px;
   
 }
@@ -232,9 +235,6 @@ footer {
 }
 
 
-
-
-
 @media screen and (min-width: 360px) {
   #main {
       grid-template-columns: auto;
@@ -262,8 +262,6 @@ footer {
   #inputNav{
     margin: 15px;
 }
-
-  
 }
 
 @media screen and (min-width: 1200px)
@@ -284,11 +282,9 @@ section {
 
 }
 
-
 aside {
   display: block;
 }
-
 
 #menuBurger
 {
@@ -297,5 +293,22 @@ aside {
 
  }
 
+ @media (max-width: 576px) {
+  header {
+  background-color: #80DEEA;
+  
+  }
+}
 
+@media (min-width: 768px) and (max-width: 868px) {
+  header {
+      background-color: white;
+  }
+}
 
+@media (min-width: 768px) and (orientation: landscape) {
+  header {
+      background-color: #1A5276;
+  }
+
+ }
