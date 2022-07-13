@@ -280,6 +280,7 @@ section {
   grid-template-rows: repeat(4, auto);
   grid-gap: 10px;
 
+
 }
 
 aside {
@@ -312,3 +313,18 @@ aside {
   }
 
  }
+
+ 
+
+.card-body a:link {
+  background-color: #1A5276 ;
+}
+
+.card-body a:hover {
+  background-color:#80DEEA;
+}
+
+.card-body a:active {
+  background-color: #1A5276 ;
+  
+}
