@@ -5,6 +5,7 @@
 body {
   color:#1A5276;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin: 5%;
 }
 
 .logo {
@@ -75,6 +76,7 @@ aside {
   
   grid-area: aside;
   font-size: 20px;
+  padding: 6%;
 }
 
 
@@ -119,7 +121,7 @@ section {
 
 .item {
   background-color:#80DEEA;
-  color: #077c8b;
+  color: #1A5276;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
   border-top: solid 5px  #1A5276;
@@ -132,6 +134,13 @@ section {
   text-align: center;
 }
 
+.imagen {
+  
+  padding-top: 2%;
+  margin-left: 45%;
+  
+  
+}
 
 aside {
   grid-area: aside;
@@ -148,6 +157,7 @@ aside {
 
   h3{
   text-align: center;
+  
   }
 
   #subtitulo{
@@ -155,7 +165,7 @@ aside {
   animation-name: aparecer;
   animation-iteration-count: infinite; 
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #077c8b; 
+  color: #1A5276; 
   justify-content:space-evenly;
   position: justify;
   text-align: center
@@ -208,7 +218,7 @@ aside {
 
     
 .cambioTexto{
-  color: #077c8b;
+  color: #1A5276;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px; 
   text-align: justify
@@ -328,3 +338,4 @@ aside {
   background-color: #1A5276 ;
   
 }
+
