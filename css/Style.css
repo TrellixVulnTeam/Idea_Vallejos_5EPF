@@ -1,346 +1,345 @@
 * {
-  padding: 0%;
-  margin: 0%;
-}
-body {
-  color:#1A5276;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin: 5%;
-  background: linear-gradient(to right, rgb(164, 196, 233), white, rgb(164, 196, 233));
-}
-
-.logo {
-  padding: 0%;
-  background-repeat: none;
-  margin: 1% 1% 1% 1% 
-}
-
-#main {
-  width: 100%;
-  height: 800px;
-}
-
-header,
-footer,
-aside,
-section,
-nav {
-  border-radius: 15px;
-}
-
-section,
-aside {
-  background-color: #E0F7FA;
-}
-
-header,
-footer,
-nav {
-  background-color: #80DEEA;
-}
-
-h1 {
-  display: inline;
-}
-
-nav ul li {
-  display: inline;
-}
-
-ul {
-  list-style-type: none;
-}
-
-
-button {
-  border-radius: 5px;
-  background-color: white;
-  padding: 3px;
-}
-
-.redes {
-  font-size: large;
-  font-weight: bold;
-  padding: 5px;
-  margin: 5px;
-}
-
-nav {
-  font-size: large;
-  font-weight: 500;
-  grid-area: nav;
-  border-radius: 120;
-  
-}
-
-aside {
-  
-  grid-area: aside;
-  font-size: 20px;
-  padding: 6%;
-}
-
-
-
-
-header {
-  padding: 30px;
-  grid-area: header;
-  justify-content: space-between;
-}
-
-
-header,footer{
-  display: flex;
-  align-items: center;
-}
-
-article {
-  border-radius: 15px;
-  text-align: center;
-
-  
-}
-
-img {
-  width: 100px;
-  height: 100px;
-}
-
-section {
-  padding: 10px 10px 10px 10px;
-  grid-area: section;
-  justify-items: space-evenly;
-  align-items: stretch
-}
-
-#ubicacion{
-  display:flex;
-  flex-flow:row wrap; 
-  justify-content:space-evenly;
-}
-
-.item {
-  background-color:#80DEEA;
-  color: #1A5276;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-  border-top: solid 5px  #1A5276;
-  border-right: solid 5px #1A5276;
-  border-bottom: solid 5px #1A5276;
-  border-left: solid 5px #1A5276 ;
-  border-radius: 15px;
-  z-index: 2;
-  justify-content:center;
-  text-align: center;
-}
-
-
-#imagenes{
-  width: 115px;
-  height: 150px;
-}
-
-#nosotros{
-  width: 300px;
-  height: 200px;
-  padding-top: 2%;
-  text-align: center;
-  
-}
-
-aside {
-  grid-area: aside;
-  
-}
-#titulo{
-  justify-content:space-evenly;
-  text-align: center;
-  font-size: 20px; 
-  font-weight:lighter;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #1A5276;
-  position: justify; }
-
-  h3{
-  text-align: center;
-  
+    padding: 0%;
+    margin: 0%;
   }
-
-  #subtitulo{
-  animation-duration: 2s;
-  animation-name: aparecer;
-  animation-iteration-count: infinite; 
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #1A5276; 
-  justify-content:space-evenly;
-  position: justify;
-  text-align: center
+  body {
+    color:#1A5276;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 5%;
+    background: linear-gradient(to right, rgb(164, 196, 233), white, rgb(164, 196, 233));
+  }
   
-}
-
-.divTransform,
-.divTransition
- {
-   
-    
-  background-color:#80DEEA;
-  color: #1A5276;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-  border-top: solid 5px #1A5276 ;
-  border-right: solid 5px #1A5276;
-  border-bottom: solid 5px #1A5276;
-  border-left: solid 5px #1A5276;
-  border-radius: 15px;
+  .logo {
+    padding: 0%;
+    background-repeat: none;
+    margin: 1% 1% 1% 1% 
+  }
   
-}
-
-.divTransform{
-    transform: translate(20px, 20px); 
-    transform: scale(1,1); /*sirve para escalar o hacer zoom del contenido*/
-  
-}
-
-.divTransition{
-  transition: height 2s, width 4s; /*deslizamiento del elemento height de arriba abajo width de costados (tiene que estar nombrado en divtransition:hover) ó sino*/
-  transition: all 2s; /*esto sirve para que cambie todo el elemento en esa cantidad de segundos*/
-  
-}
-
-.divTransition:hover /*hover significa cuando paso el mouse por encima*/
-{
-  height: 500px; /*cuando se pase el mouse por encima del elemento(en este caso el color de fondo del cuadro) se agrandara ya que originalmente esta en 400px */
-  width: 200px;
-  background-color: #0ac1da  /*el color de fondo del texto cambia cuando pongo el mouse arriba*/
-}
-
-  
-@keyframes aparecer { 
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-  
-
-
-    
-.cambioTexto{
-  color: #1A5276;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px; 
-  text-align: justify
-}
-
-
-
-
- 
-
-#main, 
-section{
-  display: grid;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 20px;
-}
-
-footer {
-  grid-area: footer;
-  justify-content: center;
-  
-}
-
-
-@media screen and (min-width: 360px) {
   #main {
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-      column-gap: 10px;
-      row-gap: 10px;
-      grid-template-areas: "header" "nav" "section" "footer";
+    width: 100%;
+    height: 800px;
+  }
+  
+  header,
+  footer,
+  aside,
+  section,
+  nav {
+    border-radius: 15px;
+  }
+  
+  section,
+  aside {
+    background-color: #E0F7FA;
+  }
+  
+  header,
+  footer,
+  nav {
+    background-color: #80DEEA;
+  }
+  
+  h1 {
+    display: inline;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  
+  button {
+    border-radius: 5px;
+    background-color: white;
+    padding: 3px;
+  }
+  
+  .redes {
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  nav {
+    font-size: large;
+    font-weight: 500;
+    grid-area: nav;
+    border-radius: 120;
+    
+  }
+  
+  aside {
+    
+    grid-area: aside;
+    font-size: 20px;
+    padding: 6%;
+  }
+  
+  
+  
+  
+  header {
+    padding: 30px;
+    grid-area: header;
+    justify-content: space-between;
+  }
+  
+  
+  header,footer{
+    display: flex;
+    align-items: center;
+  }
+  
+  article {
+    border-radius: 15px;
+    text-align: center;
+  
+    
+  }
+  
+  img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  section {
+    padding: 10px 10px 10px 10px;
+    grid-area: section;
+    justify-items: space-evenly;
+    align-items: stretch
+  }
+  
+  #ubicacion{
+    display:flex;
+    flex-flow:row wrap; 
+    justify-content:space-evenly;
+  }
+  
+  .item {
+    background-color:#80DEEA;
+    color: #1A5276;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border-top: solid 5px  #1A5276;
+    border-right: solid 5px #1A5276;
+    border-bottom: solid 5px #1A5276;
+    border-left: solid 5px #1A5276 ;
+    border-radius: 15px;
+    z-index: 2;
+    justify-content:center;
+    text-align: center;
+  }
+  
+  
+  #imagenes{
+    width: 115px;
+    height: 150px;
+  }
+  
+  #nosotros{
+    width: 300px;
+    height: 200px;
+    padding-top: 2%;
+    text-align: center;
+    
+  }
+  
+  aside {
+    grid-area: aside;
+    
+  }
+  #titulo{
+    justify-content:space-evenly;
+    text-align: center;
+    font-size: 20px; 
+    font-weight:lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #1A5276;
+    position: justify; }
+  
+    h3{
+    text-align: center;
+    
+    }
+  
+    #subtitulo{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #1A5276; 
+    justify-content:space-evenly;
+    position: justify;
+    text-align: center
+    
+  }
+  
+  .divTransform,
+  .divTransition
+   {
+     
+      
+    background-color:#80DEEA;
+    color: #1A5276;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border-top: solid 5px #1A5276 ;
+    border-right: solid 5px #1A5276;
+    border-bottom: solid 5px #1A5276;
+    border-left: solid 5px #1A5276;
+    border-radius: 15px;
+    
+  }
+  
+  .divTransform{
+      transform: translate(20px, 20px); 
+      transform: scale(1,1); /*sirve para escalar o hacer zoom del contenido*/
+    
+  }
+  
+  .divTransition{
+    transition: height 2s, width 4s; /*deslizamiento del elemento height de arriba abajo width de costados (tiene que estar nombrado en divtransition:hover) ó sino*/
+    transition: all 2s; /*esto sirve para que cambie todo el elemento en esa cantidad de segundos*/
+    
+  }
+  
+  .divTransition:hover /*hover significa cuando paso el mouse por encima*/
+  {
+    height: 500px; /*cuando se pase el mouse por encima del elemento(en este caso el color de fondo del cuadro) se agrandara ya que originalmente esta en 400px */
+    width: 200px;
+    background-color: #0ac1da  /*el color de fondo del texto cambia cuando pongo el mouse arriba*/
+  }
+  
+    
+  @keyframes aparecer { 
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+    
+  
+  
+      
+  .cambioTexto{
+    color: #1A5276;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px; 
+    text-align: justify
+  }
+  
+  
+  
+  
+   
+  
+  #main, 
+  section{
+    display: grid;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+  }
+  
+  footer {
+    grid-area: footer;
+    justify-content: center;
+    
+  }
+  
+  
+  @media screen and (min-width: 360px) {
+    #main {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas: "header" "nav" "section" "footer";
+    }
+    
+    aside {
+      display: block;
+    }
+  
+    aside,
+    #ulNav,
+    #inputHeader{
+        display: none;
+    }
+  
+    nav{
+      display: flex;
+      justify-content: space-around;
+  }
+    
+    #inputNav{
+      margin: 15px;
+  }
+  }
+  
+  @media screen and (min-width: 1200px)
+  {
+  
+  
+  #main {
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-rows: 15% 10% auto 15%;
+    grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
+  }
+  
+  section {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 10px;
+  
+  
   }
   
   aside {
     display: block;
   }
-
-  aside,
-  #ulNav,
-  #inputHeader{
-      display: none;
-  }
-
-  nav{
-    display: flex;
-    justify-content: space-around;
-}
   
-  #inputNav{
-    margin: 15px;
-}
-}
-
-@media screen and (min-width: 1200px)
-{
-
-
-#main {
-  display: grid;
-  grid-template-columns: 15% auto;
-  grid-template-rows: 15% 10% auto 15%;
-  grid-template-areas: "header header" "nav nav" "aside section" "footer footer";
-}
-
-section {
-  grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(4, auto);
-  grid-gap: 10px;
-
-
-}
-
-aside {
-  display: block;
-}
-
-#menuBurger
-{
-  display: none;
-}
-
- }
-
- @media (max-width: 576px) {
-  header {
-  background-color: #80DEEA;
+  #menuBurger
+  {
+    display: none;
+  }
   
-  }
-}
-
-@media (min-width: 768px) and (max-width: 868px) {
-  header {
-      background-color: white;
-  }
-}
-
-@media (min-width: 768px) and (orientation: landscape) {
-  header {
-      background-color: #1A5276;
-  }
-
- }
-
- 
-
-.card-body a:link {
-  background-color: #1A5276 ;
-}
-
-.card-body a:hover {
-  background-color:#80DEEA;
-}
-
-.card-body a:active {
-  background-color: #1A5276 ;
+   }
   
-}
-
+   @media (max-width: 576px) {
+    header {
+    background-color: #80DEEA;
+    
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 868px) {
+    header {
+        background-color: white;
+    }
+  }
+  
+  @media (min-width: 768px) and (orientation: landscape) {
+    header {
+        background-color: #1A5276;
+    }
+  
+   }
+  
+   
+  
+  .card-body a:link {
+    background-color: #1A5276 ;
+  }
+  
+  .card-body a:hover {
+    background-color:#80DEEA;
+  }
+  
+  .card-body a:active {
+    background-color: #1A5276 ;
+    
+  }
