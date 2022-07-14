@@ -6,6 +6,7 @@ body {
   color:#1A5276;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 5%;
+  background: linear-gradient(to right, rgb(164, 196, 233), white, rgb(164, 196, 233));
 }
 
 .logo {
@@ -232,9 +233,7 @@ aside {
 
 
 
-body{
-  background: linear-gradient(to right, rgb(164, 196, 233), white, rgb(164, 196, 233));
-}
+
  
 
 #main, 
