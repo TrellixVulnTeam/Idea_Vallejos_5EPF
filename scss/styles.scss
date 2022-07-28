@@ -1,3 +1,4 @@
+@import "variables";
 * {
     padding: 0%;
     margin: 0%;
@@ -18,6 +19,7 @@
   #main {
     width: 100%;
     height: 800px;
+    background-color: transparent;
   }
   
   header,
@@ -82,7 +84,6 @@
   
   
   
-  
   header {
     padding: 30px;
     grid-area: header;
@@ -93,6 +94,7 @@
   header,footer{
     display: flex;
     align-items: center;
+
   }
   
   article {
@@ -105,6 +107,7 @@
   img {
     width: 100px;
     height: 100px;
+    border-radius: 20%;
   }
   
   section {
@@ -156,11 +159,13 @@
   #titulo{
     justify-content:space-evenly;
     text-align: center;
-    font-size: 20px; 
+    font-size: 40px; 
     font-weight:lighter;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #1A5276;
-    position: justify; }
+    position: justify; 
+    background-color: transparent;
+  }
   
     h3{
     text-align: center;
@@ -203,7 +208,7 @@
   }
   
   .divTransition{
-    transition: height 2s, width 4s; /*deslizamiento del elemento height de arriba abajo width de costados (tiene que estar nombrado en divtransition:hover) ó sino*/
+    transition: height 2s, width 4s; /*deslizamiento del elemento height de arriba abajo width de costados (tiene que estar nombrado en divtransition:hover) */
     transition: all 2s; /*esto sirve para que cambie todo el elemento en esa cantidad de segundos*/
     
   }
@@ -219,8 +224,6 @@
     100% {opacity: 1;}
   }
     
-  
-  
       
   .cambioTexto{
     color: #1A5276;
@@ -229,10 +232,6 @@
     text-align: justify
   }
   
-  
-  
-  
-   
   
   #main, 
   section{
@@ -244,7 +243,6 @@
   footer {
     grid-area: footer;
     justify-content: center;
-    
   }
   
   
@@ -279,7 +277,6 @@
   
   @media screen and (min-width: 1200px)
   {
-  
   
   #main {
     display: grid;
@@ -363,7 +360,7 @@
   }
 
 
-@import "variables";
+
 $colorTexto: #1A5276 ;
 .row {
     background-color:#80DEEA;
@@ -383,14 +380,15 @@ $colorTexto: #1A5276 ;
     .btn {
         background-color: $colorPrincipal;
         &:hover {
-            background-color: $colorHover;
+
             color: $colorTexto;
         }
     }
 }
 
-$tamanoBoton: 80px;
+$tamanoBoton: 60px;
 $tamanoTipo: 20px;
+$redes: (ig: rgb(167, 53, 100), fb: rgb(52, 52, 204));
 
 footer {
     height: 100px;
@@ -399,12 +397,19 @@ footer {
     justify-content: center;
     
     .redes {
-        border-radius: 50%;
+        border-radius: 40%;
         width: $tamanoBoton;
         height: $tamanoBoton;
         font-size: $tamanoTipo;
     }
 }
+
+@each $red,
+$color in $redes {
+    .#{$red} {
+        background-color: $color;
+    }
+} 
 
 @media (max-width: 550px) {
     .redes {
@@ -423,10 +428,12 @@ footer {
     }
 }
 
-@for $i from 1 to 4 {
+
+
+@for $i from 1 to 2 {
     .redes#{$i} {
-        width: $tamanoBoton/$i;
-        height: $tamanoBoton/$i;
+     width: $tamanoBoton/$i;
+     height: $tamanoBoton/$i;
     }
 }
 
@@ -437,5 +444,5 @@ footer {
 @mixin subrayado($color, $tipo) {
     text-decoration: underline;
     text-decoration-color: $color;
-    text-decoration-style: $tipo;
 }
+
